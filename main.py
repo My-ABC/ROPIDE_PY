@@ -11,10 +11,10 @@ if __name__ == '__main__':
     <nsp+4>
     #pop-er0; [1234]
     """,
-    [{"name": 'pop-er0', "addr": '121A8'}],
-    {"leftStartAddress": "E9E0", "rightStartAddress": "D9D0"}
+        [{"name": 'pop-er0', "addr": '121A8'}],
+        {"leftStartAddress": "E9E0", "rightStartAddress": "D9D0"}
     )
     render.set_mode(True)
     rich.print(render.render_highlighted_code(res['highlightLines']))
-    print(res['hexChars'])
-    print(res['errorCount'])
+    print(f"hexChars: {res['hexChars']}")
+    print(f"errorCount: {res['errorCount']}")
