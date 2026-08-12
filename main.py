@@ -6,11 +6,11 @@ install()
 
 if __name__ == '__main__':
     res = parser.parseRopInput(
-    """
-    #pop-er0; [$nsp+4 - 4]
-    <nsp+4>
-    #pop-er0; [1234]
-    """,
+"""
+#pop-er0; [$nsp+4 - 4]
+<nsp+4>
+#pop-er0; [1234]
+""",
         [{"name": 'pop-er0', "addr": '121A8'}],
         {"leftStartAddress": "E9E0", "rightStartAddress": "D9D0"}
     )
