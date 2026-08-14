@@ -2,6 +2,7 @@ import rop_parser as parser
 import render
 import read_rop
 import rich
+from syntax import highlight_rop_code
 from rich.traceback import install
 
 install()
